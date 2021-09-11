@@ -1,0 +1,21 @@
+1. tentukan kodisi bilangan di bawah ini menggunakan operator logika
+
+    1 < 10
+    9 > 10 dan 10 > 9
+    10 > 11 atau 11 < 10
+
+2. Tono memiliki uang sebesar 10rb dan tini memiliki uang sebesar 8rb
+dan toni memiliki uang sebesar 15rb
+ 1. apakah uang toni lebih besar dari tono dan tini
+ 2. apakah uang toni lebih besar dari tini dan tidak lebih besar dari tono
+
+3. buatlah sebuah program login sederhana
+jika username dan passwordnya sesuai maka ada keterangan
+login = 1
+
+
+ada sebuah test masuk universitas negeri kejuruan olahraga
+jika nilai akademik > 85 dan juga nilai atletiknya > 83 maka dinyatakan lulus.
+jika kurang salah satu atau keduanya maka dinyatakan tidak lulus.
+buatlah program tersebut menggunakan kombinasi antara
+operator logika, perbandingan dan juga operator ternary.

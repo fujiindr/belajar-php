@@ -1,0 +1,10 @@
+Ucup memiliki uang sebesar 100 ribu rupiah,
+kemudian di belikan air minum dengan harga 15.000,
+ketika sedang bermain ucup merasa lapar dan 
+membeli sosis bakar dengan harga 25.000
+
+selesai makan ucup melihat musafir di jalan
+dan bersedekah dengan 10% dari sisa uang yang ada,
+dia pergi ke rumah untuk pulang dan tak sengaja
+menemukan 50% uang yang dia miliki
+sekarang buatlah program untuk menghitung sisa uang ucup
