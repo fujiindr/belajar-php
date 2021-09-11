@@ -6,6 +6,11 @@ class segitiga{
     public $sisi2 = "15";
     public $sisi3 = "10";
 
+    /*public $alas;
+    public $tinggi;
+    public $sisi1;
+    public $sisi2;
+    public $sisi3; */
     
     public function luas()
     {
@@ -16,12 +21,17 @@ class segitiga{
         return  $this->keliling = $this->sisi1 + $this->sisi2 + $this->sisi3;
     }
 }
-$segitiga1 = new segitiga();
-echo "Alas Segitiga: " . $segitiga1->alas . "<br>";
-echo "Tinggi Segitiga : " . $segitiga1->tinggi . "<br>";
-echo "Sisi 1 : " . $segitiga1->sisi1 . "<br>";
-echo "Sisi 2 : " . $segitiga1->sisi2 . "<br>";
-echo "Sisi 3 : " . $segitiga1->sisi3 . "<br>";
-echo "Luas Segitiga : " . $segitiga1->luas() . "<br>";
-echo "Keliling Segitiga : " . $segitiga1->keliling();
+$segitiga = new segitiga();
+/*  $segitiga->alas = 10;
+    $segitiga->tinggi = 15;
+    $segitiga->sisi1 = 10;
+    $segitiga->sisi2 = 15; 
+    $segitiga->sisi3 = 10;*/
+echo "Alas Segitiga: " . $segitiga->alas . "<br>";
+echo "Tinggi Segitiga : " . $segitiga->tinggi . "<br>";
+echo "Sisi  : " . $segitiga->sisi1 . "<br>";
+echo "Sisi 2 : " . $segitiga->sisi2 . "<br>";
+echo "Sisi 3 : " . $segitiga->sisi3 . "<br>";
+echo "Luas Segitiga : " . $segitiga->luas() . "<br>";
+echo "Keliling Segitiga : " . $segitiga->keliling();
 ?>
