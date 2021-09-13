@@ -18,7 +18,8 @@
                 <td>Masukan Bilangan 2 : <input type = "text" name = "bil2"></td>
             </tr>
             <tr>
-                <td><input type = "submit" name = "input" value = "input"></td>
+                <td><input type = "submit" name = "input" value = "input">
+                <input type = "reset" value = "reset"></td>
             </tr>
         </table>
     </fieldset>
@@ -27,12 +28,18 @@ if (isset($_POST['input'])){
     $bil1 = $_POST ['bil1'];
     $bil2 = $_POST ['bil2'];
 
-    class aritmatika{
+    /* mengambil file dari a.php
+       require_once 'a.php';
+    */
+
+    class aritmatika
+    {
+        public $bil1, $bil2;
         
-        public function __construct($bil1, $bil2)
+        public function __construct($a, $b)
         {
-            $this->bil1 = $bil1;
-            $this->bil2 = $bil2;
+            $this->bil1 = $a;
+            $this->bil2 = $b;
         }
         public function penjumlahan()
         {
@@ -40,25 +47,25 @@ if (isset($_POST['input'])){
         }
         public function pengurangan()
         {
-            return ($this->bil1 - $this->bil2);
+            return $this->bil1 - $this->bil2;
         }
         public function perkalian()
         {
-            return ($this->bil1 * $this->bil2);
+            return $this->bil1 * $this->bil2;
         }
         public function pembagian()
         {
-            return ($this->bil1 / $this->bil2);
+            return $this->bil1 / $this->bil2;
         }
         public function modulus()
         {
-            return ($this->bil1 % $this->bil2);
+            return $this->bil1 % $this->bil2;
         }
 
     }
 
 $bil = new aritmatika($bil1, $bil2);
-}
+
 ?>
 <table>
     <tr>
@@ -82,6 +89,7 @@ $bil = new aritmatika($bil1, $bil2);
         <td> : <?php echo $bil->modulus();?></td>
     </tr>
 </table>
-    </FORM>
+<?php } ?>
+</FORM>
 </body>
 </html>
