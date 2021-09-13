@@ -3,7 +3,7 @@ class kucing
 {
     public $warna;
 
-    public function __costruct()
+    public function __construct($warna)
     {
         $this->warna = $warna;
     }
@@ -17,7 +17,8 @@ class kucing
     }
 }
 $kucing1 = new kucing("Hitam");
-echo "Warna Kucing 1 : " . $kucing1->warna . "<br>";
+echo "Bil1 : " . $kucing1->warna . "<br>";
 
 $kucing2 = new kucing("Orange");
 echo "Warna Kucing 2 : " . $kucing2->warna . "<br>";
+?>
