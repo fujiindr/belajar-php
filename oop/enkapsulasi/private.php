@@ -17,5 +17,8 @@ class Laptop extends Komputer
     }
 }
 
+$komputer = new Komputer();
 $laptop = new Laptop();
+
+echo $komputer->tampilkanJenisProcessor();
 echo $laptop->getProcessor();
