@@ -29,4 +29,3 @@ $kucing2 = new kucing();
 $kucing2->warna = "Orange";
 echo "Warna Kucing : " . $kucing2->warna . "<br>";
 echo "Sifat Kucing : " . $kucing2->berburu() . "<hr>";
-?>
