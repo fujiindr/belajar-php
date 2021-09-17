@@ -15,12 +15,16 @@
             <td> Jenis Makhluk </td>
             <td> : </td>
             <td><select name="mahluk">
+                <option value="Pilih">Pilih</option>
                 <option value="Manusia">Manusia</option>
                 <option value="Malaikat">Malaikat</option>
                 <option value="Jin">Jin</option>
                 <option value="Setan">Setan</option>
             </select></td>
-            <td><input type="submit" name="pilih" value="pilih"></td>
+            </tr>
+            <tr>
+            <td><input type="submit" name="pilih" value="Pilih">
+            <input type="reset" value="Reset"></td>
             </tr>
         </form>
     </table>
@@ -47,7 +51,7 @@ if (isset($_POST['pilih'])) {
             } elseif ($this->mahluk == "Malaikat") {
                 $a = "Beribadah Kepada Tuhan";
             } elseif ($this->mahluk == "Jin") {
-                $a = "Ada yang baik, ada yang jahat";
+                $a = "Ada yang baik, ada yang jahat / Labil";
             } else {
                 $a = "Menggagu Manusia agar tidak beribadah";
             }
@@ -59,7 +63,7 @@ if (isset($_POST['pilih'])) {
     ?>
     <table>
     <tr>
-        <td><?php echo "Jenis Hamba : " . $hamba->mahluk . "<br>"; ?> </td>
+        <td><?php echo "Jenis Makhluk : " . $hamba->mahluk . "<br>"; ?> </td>
     </tr>
     <tr>
         <td><?php echo "Tugas : " . $hamba->tgs() . "<br>"; ?> </td>
