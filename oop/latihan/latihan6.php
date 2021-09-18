@@ -85,6 +85,7 @@ if (isset($_POST['pilih'])) {
 
     }
     $mahasiswa = new dosen($nilai);
+
     ?>
     <table>
     <tr>
