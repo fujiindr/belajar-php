@@ -95,8 +95,8 @@ if (isset($_POST['pilih'])) {
         public function total()
         {
             $hasil = $this->total - $this->getdiskon();
-            $a = $hasil - $this->cashBack();
-            return $a;
+            $jumlah = $hasil - $this->cashBack();
+            return $jumlah;
         }
     }
     $bayar = new bayar($total, $pembayaran);
