@@ -8,14 +8,22 @@
     <title>Latihan CRUD - Create Data</title>
 </head>
 <body>
+    <center>
+        <a href="data.php">Data Laundry | </a>
+        <a href="create.php">Tambah Data Laundry</a>
+    </center>
     <fieldset>
         <legend>Input Data Laundry</legend>
         <form action="proses.php" method="post">
         <input type="hidden" name="aksi" value="create">
             <table>
                 <tr>
+                    <td>ID karyawan</td>
+                    <td><input type="text" name="id_karyawan" required></td>
+                </tr>
+                <tr>
                     <td>Kode Pesanan</td>
-                    <td><input type="text" name="kode" required></td>
+                    <td><input type="text" name="kode_pesanan" required></td>
                 </tr>
                 <tr>
                     <td>Tanggal Pesanan</td>

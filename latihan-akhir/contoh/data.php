@@ -14,34 +14,23 @@
         <a href="create.php">Tambah Data Laundry</a>
     </center>
     <fieldset>
-        <legend>Data Laundry</legend>
+        <legend>Data Karyawan</legend>
         <table border="1">
             <tr>
                 <th>No</th>
-                <th>ID karyawan</th>
-                <th>Kode Pesanan</th>
-                <th>Tanggal Pesanan</th>
-                <th>Tanggal Pengambilan</th>
-                <th>Nama Pelanggan</th>
-                <th>Jenis Paket</th>
-                <th>Berat</th>
-                <th colspan="4">Aksi</th>
+                <th>ID Karyawan</th>
+                <th>Nama Karyawan</th>
             </tr>
              <?php
 include '../database.php';
-$laundry = new laundry();
+$karyawan = new karyawan();
 $no = 1;
-foreach ($laundry->index() as $data) {
+foreach ($karyawan->index() as $data) {
     ?>
                 <tr>
                     <td><?php echo $no++; ?></td>
                     <td><?php echo $data['id_karyawan']; ?></td>
-                    <td><?php echo $data['kode_pesanan']; ?></td>
-                    <td><?php echo $data['tanggal']; ?></td>
-                    <td><?php echo $data['kembali']; ?></td>
-                    <td><?php echo $data['nama']; ?></td>
-                    <td><?php echo $data['paket']; ?></td>
-                    <td><?php echo $data['berat']; ?> Kg</td>
+                    <td><?php echo $data['nama_karyawan']; ?></td>
                     <td>
                         <a href = "show.php?id=<?php echo $data['id']; ?>">Detail</a>
                     </td>
@@ -66,3 +55,4 @@ foreach ($laundry->index() as $data) {
 </body>
 
 </html>
+

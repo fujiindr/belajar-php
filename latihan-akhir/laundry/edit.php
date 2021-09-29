@@ -14,7 +14,7 @@ include '../database.php';
 $laundry = new laundry();
 foreach ($laundry->edit($_GET['id']) as $data) {
     $id = $data['id'];
-    $kode = $data['kode'];
+    $kode_pesanan = $data['kode_pesanan'];
     $tanggal = $data['tanggal'];
     $kembali = $data['kembali'];
     $nama = $data['nama'];
@@ -30,7 +30,7 @@ foreach ($laundry->edit($_GET['id']) as $data) {
             <table>
                <tr>
                     <td>Kode Pesanan</td>
-                    <td><input type="text" name="kode" value="<?php echo $kode; ?>" required></td>
+                    <td><input type="text" name="kode_pesanan" value="<?php echo $kode_pesanan; ?>" required></td>
                 </tr>
                 <tr>
                     <td>Tanggal Pesanan</td>
@@ -47,9 +47,9 @@ foreach ($laundry->edit($_GET['id']) as $data) {
                 <tr>
                 <td>Jenis Paket </td>
                   <td><select name = "paket">
-                <option value = "<?php echo $jenis; ?>">Cuci Satuan</option>
-                <option value = "<?php echo $jenis; ?>">Cuci Komplit</option>
-                <option value = "<?php echo $jenis; ?>">Expres</option>
+                <option value = "<?php echo $paket; ?>">Cuci Satuan</option>
+                <option value = "<?php echo $paket; ?>">Cuci Komplit</option>
+                <option value = "<?php echo $paket; ?>">Expres</option>
                 </select></td>
                 </tr>
                 <tr>

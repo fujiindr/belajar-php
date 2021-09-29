@@ -11,11 +11,11 @@ class laundry extends Database
     }
 
     // Menambah Data
-    public function create($kode, $tanggal, $kembali, $nama, $jenis, $berat)
+    public function create($id_karyawan, $kode_pesanan, $tanggal, $kembali, $nama, $paket, $berat)
     {
         mysqli_query(
             $this->koneksi,
-            "insert into laundry values(null,'$kode','$tanggal', '$kembali', '$nama', '$jenis', '$berat')"
+            "insert into laundry values(null, '$id_karyawan,' '$kode_pesanan','$tanggal', '$kembali', '$nama', '$paket', '$berat')"
         );
     }
     // Menampilkan Data Berdasarkan ID
@@ -38,11 +38,12 @@ class laundry extends Database
         return $datalaundry;
     }
     // mengupdate data berdasarkan id
-    public function update($id, $kode, $tanggal, $kembali, $nama, $jenis, $berat)
+    public function update($id, $id_karyawan, $kode_pesanan, $tanggal, $kembali, $nama, $paket, $berat)
     {
         mysqli_query(
             $this->koneksi,
-            "update laundry set kode='$kode', tanggal='$tanggal', kembali='$kembali', nama='$nama', jenis='$jenis', berat='$berat' where id='$id'"
+            "update laundry set id_karyawan = '$id_karyawan',
+             kode_pesanan='$kode_pesanan', tanggal='$tanggal', kembali='$kembali', nama='$nama', paket='$paket', berat='$berat' where id='$id'"
         );
     }
 

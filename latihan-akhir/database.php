@@ -21,6 +21,7 @@ class Database
 }
 // Data Tabel Dosen & Mahasiswa
 include 'laundry.php';
+include 'karyawan.php';
 
 // koneksi DB
 $db = new Database();
